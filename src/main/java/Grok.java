@@ -20,7 +20,7 @@ public class Grok
      */
     public Grok(int powerLevel)
     {
-        // TODO - add your code here
+        setPowerLevel(powerLevel);
     }
 
 
@@ -30,7 +30,8 @@ public class Grok
      */
     public int getPowerLevel()
     {
-        // TODO - add your code here
+        return powerLevel;
+
     }
 
     // mutator methods
@@ -41,7 +42,7 @@ public class Grok
      */
     public void setPowerLevel(int powerLevel)
     {
-        // TODO - add your code here
+        this.powerLevel = powerLevel;
     }
 
     /*
@@ -52,7 +53,7 @@ public class Grok
      */
     public void takePowerPill(PowerPill pill)
     {
-        // TODO - add your code here
+        powerLevel += pill.getPower();
     }
 
     /*
@@ -61,6 +62,6 @@ public class Grok
      */
     public void tookHit()
     {
-        // TODO - add your code here
+        powerLevel -= 5;
     }
 }
